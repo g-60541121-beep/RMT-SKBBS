@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sistem Kehadiran Murid</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #f8f9fa;
+    }
+    h1 { color: #333; }
+    input, button {
+      margin: 5px;
+      padding: 8px;
+    }
+    button {
+      cursor: pointer;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      background: #fff;
+      margin: 5px 0;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <h1>Sistem Kehadiran Murid</h1>
+
+  <!-- Pilih tarikh -->
+  <label for="tarikh">Tarikh:</label>
+  <input type="date" id="tarikh" />
+
+  <h3>Daftar Kehadiran</h3>
+  <input type="text" id="nama" placeholder="Nama murid" />
+  <input type="text" id="kelas" placeholder="Kelas" />
+  <button id="hadirBtn">✔ Hadir</button>
+  <button id="takHadirBtn">❌ Tak Hadir</button>
+
+  <h3>Senarai Kehadiran</h3>
+  <ul id="senarai"></ul>
+
+  <!-- Sambung ke app.js -->
+  <script type="module" src="app.js"></script>
+</body>
+</html>
